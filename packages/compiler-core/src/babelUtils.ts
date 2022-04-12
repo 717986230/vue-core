@@ -7,8 +7,8 @@ import type {
   ObjectProperty,
   BlockStatement,
   Program
-} from '@babel/types'
-import { walk } from 'estree-walker'
+} from '@babel/types';
+import { walk } from 'estree-walker';
 
 export function walkIdentifiers(
   root: Node,
@@ -26,7 +26,6 @@ export function walkIdentifiers(
   if (__BROWSER__) {
     return
   }
-
   const rootExp =
     root.type === 'Program' &&
     root.body[0].type === 'ExpressionStatement' &&
@@ -80,7 +79,6 @@ export function walkIdentifiers(
     }
   })
 }
-
 export function isReferencedIdentifier(
   id: Identifier,
   parent: Node | null,
