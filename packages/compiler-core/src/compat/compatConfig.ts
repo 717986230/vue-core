@@ -2,7 +2,7 @@ import { SourceLocation } from '../ast'
 import { CompilerError } from '../errors'
 import { ParserContext } from '../parse'
 import { TransformContext } from '../transform'
-
+debugger;
 export type CompilerCompatConfig = Partial<
   Record<CompilerDeprecationTypes, boolean | 'suppress-warning'>
 > & {
